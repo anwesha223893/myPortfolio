@@ -1,0 +1,29 @@
+<div class="skills-cards">
+  <div class="card">
+    <h2>Programming Languages</h2>
+    <ul>
+      <li *ngFor="let language of programmingLanguages">{{ language }}</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Frontend Technologies</h2>
+    <ul>
+      <li *ngFor="let tech of frontendTechnologies">{{ tech }}</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Backend Technologies</h2>
+    <ul>
+      <li *ngFor="let tech of backendTechnologies">{{ tech }}</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Tools & Libraries</h2>
+    <ul>
+      <li *ngFor="let tool of tools">{{ tool }}</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="skills-cards">
+<div class="card">
+    <h2>Courses</h2>
+    <ul>
+      <li *ngFor="let course of courses">{{ course.name }} - {{ course.provider }}</li>
+    </ul>
+  </div>
+
+  <!-- Certifications Card -->
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li *ngFor="let cert of certifications">
+        <a [href]="cert.url" target="_blank">{{ cert.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Achievements Card -->
+  <div class="card">
+    <h2>Achievements</h2>
+    <ul>
+      <li *ngFor="let achievement of achievements">{{ achievement }}</li>
+    </ul>
+  </div>
+</div>

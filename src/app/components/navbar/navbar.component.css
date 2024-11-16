@@ -1,0 +1,40 @@
+/* Make sidenav a flex container for better layout control */
+mat-sidenav {
+    background: linear-gradient(135deg, #1976d2, #1e88e5);
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    width: 200px; /* Set desired width */
+    overflow: hidden; /* Prevents unwanted scrolling on sidenav */
+}
+
+/* Scrollable container within sidenav */
+.scrollable-content {
+    flex-grow: 1; /* Expands to fill remaining space in sidenav */
+    overflow-y: auto; /* Enables scrolling only in this container */
+    padding: 16px;
+}
+
+.content {
+    padding: 16px;
+    background: linear-gradient(135deg, #EDF1F7, #f7f9fc);
+
+    /* background: #f5f5f5; */
+    height: 80vh;
+}
+
+/* Styling for sidenav links */
+.nav-data {
+    text-align: right;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+mat-sidenav p a {
+
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}

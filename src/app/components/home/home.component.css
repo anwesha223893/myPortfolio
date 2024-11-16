@@ -1,0 +1,27 @@
+.home {
+    border: 1px solid #ccc; /* Adds a border to the home container */
+    display: flex;
+    flex-direction: column;
+    height: 75vh; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out .text-content and .bio */
+    flex-grow: 1; /* Allows intro section to expand */
+}
+
+.text-content {
+    /* Positioned at the top */
+}
+
+.bio {
+    align-self: flex-end; /* Aligns to the right within .intro */
+    text-align: right;
+    max-width: 60%;
+    overflow-wrap: break-word;
+    margin-top: auto; /* Pushes bio to the bottom */
+}

@@ -1,0 +1,20 @@
+<mat-toolbar class="mat-elevation-z3">
+    <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My Portfolio</span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" closed>
+        <!-- Scrollable content container -->
+        <div class="scrollable-content">
+            <p *ngFor="let item of navItems" class="nav-data">
+                <a [routerLink]="item.route" (click)="sidenav.close()">{{ item.label }}</a>
+            </p>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
