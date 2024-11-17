@@ -11,7 +11,9 @@
     <h2>Certifications</h2>
     <ul>
       <li *ngFor="let cert of certifications">
-        <a [href]="cert.url" target="_blank">{{ cert.name }}</a>
+        <span>{{ cert.name }}
+        <a [href]="cert.url" target="_blank"><img src="../../../assets/icons/external-link.png"/></a>
+      </span>
       </li>
     </ul>
   </div>

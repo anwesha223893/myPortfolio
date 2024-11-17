@@ -56,6 +56,11 @@
   margin: 0.5rem 0;
 }
 
+.card img{
+  width: 14px;
+  height: 14px;
+  margin: 5px;
+}
 /* Link styling */
 .card a {
   color: #007bff;
