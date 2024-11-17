@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 export class ProjectComponent {
   projects = [
     {
-      name: 'Ferrite Product (Base Product)',
-      description: 'Insurance workbench with data analytics for determining customer premiums. Features underwriter notes, document generation, JSON API response, and data visualization.',
-      technologies: ['Angular', 'Java', 'Oracle SQL', 'Chart.js'],
-      link: 'https://example.com/ferrite-product'
+      name: 'Portfolio Website',
+      description: `A personal portfolio website showcasing my skills, projects, and experience, built with Angular. 
+      The project includes responsive design, interactive UI elements, and a modular architecture.`,
+      technologies: ['Angular', 'HTML', 'CSS', 'TypeScript', 'Bootstrap'],
+      link: 'https://github.com/anwesha223893/myPortfolio'
     },
     {
       name: 'Cab Fare Prediction',
