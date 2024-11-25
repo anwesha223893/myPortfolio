@@ -1,29 +1,55 @@
-/* Make sidenav a flex container for better layout control */
+/* Toolbar styling */
+mat-toolbar {
+    display: flex;
+    justify-content: space-between; /* Pushes items to ends of toolbar */
+    align-items: center;
+    background: linear-gradient(135deg, #1976d2, #1e88e5);
+    color: #fff;
+    padding: 0 16px;
+}
+
+/* Language selector styling */
+.language-selector {
+    display: flex;
+    gap: 8px; /* Adds spacing between buttons */
+}
+
+.language-selector button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-selector button:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect for buttons */
+}
+
+/* Sidenav styling */
 mat-sidenav {
     background: linear-gradient(135deg, #1976d2, #1e88e5);
     display: flex;
     color: #fff;
     flex-direction: column;
-    width: 200px; /* Set desired width */
-    overflow: hidden; /* Prevents unwanted scrolling on sidenav */
+    width: 200px;
+    overflow: hidden;
 }
 
-/* Scrollable container within sidenav */
 .scrollable-content {
-    flex-grow: 1; /* Expands to fill remaining space in sidenav */
-    overflow-y: auto; /* Enables scrolling only in this container */
+    flex-grow: 1;
+    overflow-y: auto;
     padding: 16px;
 }
 
 .content {
     padding: 16px;
     background: linear-gradient(135deg, #EDF1F7, #f7f9fc);
-
-    /* background: #f5f5f5; */
     height: 80vh;
 }
 
-/* Styling for sidenav links */
 .nav-data {
     text-align: right;
     padding-right: 15px;
@@ -31,10 +57,13 @@ mat-sidenav {
 }
 
 mat-sidenav p a {
-
     color: inherit;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background 0.3s;
+}
+
+mat-sidenav p a:hover {
+    background: rgba(255, 255, 255, 0.2);
 }

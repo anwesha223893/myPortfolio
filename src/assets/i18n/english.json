@@ -1,0 +1,43 @@
+
+{
+    "home": {
+        "name":"Anwesha Bandyopadhyay",
+        "title":"Full-Stack Developer | Product Engineer",
+        "bio":"I am a passionate software developer with experience in building responsive applications using Angular, Java, and Oracle SQL. Skilled in creating efficient, user-centric solutions and a collaborative team player."
+      },
+    "skills":{
+        "language": ["Java", "TypeScript", "JavaScript", "Python (Basics)"],
+        "frontendTechnologies" : ["Angular", "HTML", "CSS", "RxJS", "Bootstrap"],
+        "backendTechnologies": ["Spring Boot", "Oracle SQL"],
+        "tools" : ["Git", "Thymeleaf", "Chart.js", "scikit-learn"]
+    },
+    "projects" : [
+        {
+          "name": "Portfolio Website",
+          "description": "A personal portfolio website showcasing my skills, projects, and experience, built with Angular. The project includes responsive design, interactive UI elements, and a modular architecture.",
+          "technologies": ["Angular", "HTML", "CSS", "TypeScript", "Bootstrap"],
+          "link": "https://github.com/anwesha223893/myPortfolio"
+        },
+        {
+          "name": "Cab Fare Prediction",
+          "description": "A predictive model using New York taxi fare data to estimate fares based on distance and time.",
+          "technologies": ["Python", "Linear Regression", "Random Forest Regression", "Pandas", "scikit-learn"],
+          "link": "https://example.com/cab-fare-prediction"
+        }
+    ],
+    "accomplishment":{
+        "courses" : [
+            { "name": "Programming for Everybody (Getting Started with Python)", "provider": "Coursera" }
+          ],
+        "certifications" : [
+            { "name": "SQL (Hackerrank)", "url": "https://www.hackerrank.com/certificates/38af34bdd860" },
+            { "name": "Angular (Basic)", "url": "https://www.hackerrank.com/certificates/b91e53abb00e" },
+            { "name": "Java (Hackerrank)", "url": "https://www.hackerrank.com/certificates/2688f6dfd9ff" },
+            { "name": "Python (Hackerrank)", "url": "https://www.hackerrank.com/certificates/64568b7a9930" }
+          ],
+          "achievements" : [
+            "Received Spot Award for creating a report generator",
+            "Secured second place in a company-wide hackathon, showcasing collaborative problem-solving and innovation"
+          ]
+    }
+}

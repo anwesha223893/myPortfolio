@@ -1,7 +1,7 @@
 <div class="projects-container">
     <h1>Projects</h1>
     <div class="accordion" id="projectsAccordion">
-      <div *ngFor="let project of projects; let i = index" class="accordion-item">
+      <div *ngFor="let project of ('projects' | translate); let i = index" class="accordion-item">
         <!-- Accordion Header -->
         <h2 class="accordion-header" [attr.id]="'heading' + i">
           <button 

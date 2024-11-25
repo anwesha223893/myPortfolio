@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,7 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  @Output() languageChanged = new EventEmitter<string>();
 
+  constructor(private translate: TranslateService){
+   }
+  switchLanguage(lang: string) {
+    this.languageChanged.emit(lang); // Emit the language selection
+  }
   isOpen = true;
   toggleSidebar() {
     this.isOpen = !this.isOpen;

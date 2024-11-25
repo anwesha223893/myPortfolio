@@ -1,6 +1,6 @@
 <div class="app-container">
     <!-- Navbar Component -->
-    <app-navbar></app-navbar>
+    <app-navbar (languageChanged)="switchLanguage($event)"></app-navbar>
 
     <!-- Main Content Area with Router Outlet -->
     <div class="main-content">

@@ -1,19 +1,33 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title: string = 'My Portfolio';
-  aboutMe: string = 'I am a passionate web developer with skills in Angular and more.';
-  skills: string[] = ['HTML', 'CSS', 'JavaScript', 'Angular', 'Node.js'];
-  projects: any[] = [
-    { name: 'Project One', description: 'A cool project I built using Angular.' },
-    { name: 'Project Two', description: 'Another project showcasing my skills.' }
-  ];
-
+  constructor(private translate: TranslateService){
+      this.translate.setDefaultLang('english');
+    this.translate.use('english');
+  }
   contact(): void {
     alert('Feel free to contact me at: your.email@example.com');
   }
+  switchLanguage(lang: string) {
+    const languageMap: any = {
+      english: 'english',
+      hindi: 'hindi',
+      bengali: 'bengali',
+    };
+  
+    const langKey = languageMap[lang.toLowerCase()];
+    if (langKey) {
+      console.log(`Switching to language: ${langKey}`); // Log language change
+      this.translate.use(langKey);
+    } else {
+      console.error(`Language '${lang}' is not supported.`);
+    }
+  }
+  
+  
 }
